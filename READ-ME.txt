@@ -1,0 +1,8 @@
+This project is completed by Jonathan Chew (jchewyh@gmail.com) and Shavonne Lim (shavonnelim12@gmail.com).
+
+Steps to play Plantopia Sustainability Game:
+1) Download web application code from github at https://github.com/coderchew/Plantopia
+2) Open index.html using your preferred browser
+3) Watch our Youtube Video! (https://youtu.be/TdIpJYtuwsU)
+
+Enjoy!
