@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="utf-8">
+    <title>《Plantopia》</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" onclick="closingModal('myModal')">&times;</span>
+      <img id = "gardens" width="100%">
+    </div>
+</div>
+
+<div id="yourModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content" id = "blurbg">
+        <span class="close" onclick="closingModal('yourModal')">&times;</span>
+        <h1 id = "introTitle">Welcome to Plantopia!</h1>
+        <h6 id = "introMsg">Hi fellow Plantopea! Are you ready to nurture and cultivate your very own splendid Plantohouse? The key to your verdent haven lies in the growth of remarkable Plantoplants. Unlock the magic of these exceptional flora by undertaking a series of missions that propel you towards the wondrous goal of sustainability. What are you waiting for? Start growing your Plantoplants now!</h3>
+        <button id = "introButton" onclick = "restartGame()">Start New Game!</button>
+        <button id = "continueButton" onclick = "closingModal('yourModal')">Continue</button>
+    </div>
+</div>
+
+  <!-- The Body -->
+<body onload = "GenerateStage(), GenerateImage(), GeneratePoints(), GenerateMissions()">
+    
+    <img src = "images/logo.png" id = "logo" height="100px">
+    <main>
+        <div id = "content">
+            <h3 id = "points"></h3>
+            <img src = "images/menu.png" id = "menu" class = "menu">
+            <div id = "plantViewer">
+                <img id = "myImg" width="300px">
+                <h2 id = "stageNumber" style = "text-decoration: underline;"></h2>
+            </div>
+            <div id="dvTable"></div>
+        </div>
+        <img src = "images/bottomDeco.png" id = "bottomDeco1" class = "bottomDeco">
+        <img src = "images/bottomDeco.png" id = "bottomDeco2" class = "bottomDeco">
+        <img src = "images/signboard.png" id = "signboard" class = "signboard" height="70px">
+    </main>
+    <script src="index.js"></script>
+</body>
+<html>
